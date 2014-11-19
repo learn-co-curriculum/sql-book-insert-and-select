@@ -256,3 +256,7 @@ INSERT INTO wizards VALUES ("Bigby O'leary", 40, "Yellow");
 
 It's worth noting that SQLite specifies single quotes for strings. In cases where it explicitly expects a string, such as when populating a column where we've specifically specified STRING as the datatype, it's perfectly fine to use double quotes. In other places, though, using double quotes to indicate a string will cause unexpected results in SQLite, and I'll show you an example of that in the next chapter. For now, we'll use single quotes for strings, and escape any character we need to.
 </small>
+
+## Resources
+
+* [SELECT and FROM](http://www.padjo.org/tutorials/databases/sql-select-and-from/)
