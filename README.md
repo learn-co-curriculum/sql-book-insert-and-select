@@ -146,7 +146,7 @@ Get just the names and ages:
 SELECT name, age FROM wizards;
 ```
 
-Note the comma seperation on that one.
+Note the comma separation on that one.
 
 In order to illustrate the use of this next keyword, I want you to `INSERT` another wizard with the name 'Bigby' and give him a different age and color than any other wizard. I made mine 42 and gave him the color Red.
 
@@ -160,7 +160,7 @@ Now we have two wizards with the same name in our database. But suppose we were 
 SELECT name FROM wizards;
 ```
 
-We would now get two identical results. Less than ideal if we're trying to provide a consice dataset. Luckily, we can pass in the `DISTINCT` keyword, which will automagically eliminate and duplicate results.
+We would now get two identical results. Less than ideal if we're trying to provide a concise dataset. Luckily, we can pass in the `DISTINCT` keyword, which will automagically eliminate and duplicate results.
 
 ```sql
 SELECT DISTINCT name FROM wizards;
