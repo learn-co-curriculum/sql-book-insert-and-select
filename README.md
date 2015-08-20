@@ -28,7 +28,7 @@ The next thing we need to do is declare exactly WHAT it is we are going to `INSE
 INSERT INTO wizards (name, age, color)
 ```
 
-Here we have explicitly declared the column names that we are going to add data to when we `INSERT` our new record into the database. Now we need to give SQL the actual data we want to add for this record. To do this, we're going to use the keyword `VALUES` to delcare that the following portion of the statement will be the data we want to `INSERT`. This keyword is a manditory part of the `INSERT INTO` statement.
+Here we have explicitly declared the column names that we are going to add data to when we `INSERT` our new record into the database. Now we need to give SQL the actual data we want to add for this record. To do this, we're going to use the keyword `VALUES` to delcare that the following portion of the statement will be the data we want to `INSERT`. This keyword is a mandatory part of the `INSERT INTO` statement.
 
 ```sql
 INSERT INTO wizards (name, age, color) VALUES
@@ -64,7 +64,7 @@ Another way to use `INSERT INTO` is to not declare column names at all and just 
 INSERT INTO wizards VALUES ('Bigby', 40, 'Yellow');
 ```
 
-Don't bother with this, but be aware that other people might be lazy if you see it. It's much easier it is to understand the data if you encountered this SQL statement with the explicit column names, and it cuts down on errors.
+Don't bother with this, but be aware that other people might be lazy if you see it. It's much easier to understand the data to encounter this SQL statement with the explicit column names, which cuts down on errors.
 
 Alright, so open up your database and run that `INSERT INTO` statement inside the prompt if you haven't already:
 
@@ -72,7 +72,7 @@ Alright, so open up your database and run that `INSERT INTO` statement inside th
 sqlite> INSERT INTO wizards (name, age, color) VALUES ('Bigby', 40, 'Yellow');
 ```
 
-Our data is now stored in our wizards table and ready for us to read it. We'll verify by learning about another statement and doing just that.
+Our data is now stored in our wizards table and ready for us to read it. We'll verify this by learning about another statement and doing just that.
 
 Before we go on let's add a few more wizards, and create a file to save all our work in:
 
@@ -174,7 +174,7 @@ SELECT DISTINCT name, age FROM wizards;
 
 You get back two Bigby's again. You can probably guess that it's because SQL is now comparing the values in both the name and age columns, and that it has decided you now have two distinct records. By limiting the scope of comparisons originally to merely names, we had narrowed down duplicates, but SQL is going to compare the entirety of columns and isn't looking for a duplication in one, but for what it considers to be a duplicate record.
 
-Hey speaking of Bigby's, we've got two of them in there. Let's ask SQL to give us back just a listing of every whose name is Bigby. What we want to do is filter the actual search that SQL is going to do in our wizards table. We don't want all the records, just certain ones where the string 'Bigby' matches the name. To achieve this, we're going to make use of a SQL clause. A clause modifies our `SELECT` statement by passing it certain conditions. We declare a clause in our `SELECT` statement by using the `WHERE` keyword.
+Hey speaking of Bigby's, we've got two of them in there. Let's ask SQL to give us back just a listing of every wizard whose name is Bigby. What we want to do is filter the actual search that SQL is going to do in our wizards table. We don't want all the records, just certain ones where the string 'Bigby' matches the name. To achieve this, we're going to make use of a SQL clause. A clause modifies our `SELECT` statement by passing it certain conditions. We declare a clause in our `SELECT` statement by using the `WHERE` keyword.
 
 A clause also needs at least one condition. In this case, our condition is that the name equals bigby. We're going to introduce another concept here which we'll discuss more in a bit, and that is the Operator. An operator is a part of a programming languages syntax that is ussually used to test a comparison in a condition. For right now, we are going to use the equals sign `=` to compare the wizards names, and the value 'Bigby' we are passing. Remember that this `=` doesn't actually set a value equal to anything, in conjunction with the `WHERE` clause, this operator is going to ask SQL to compare their values, and only return results in which the condition is true.
 
