@@ -260,3 +260,5 @@ It's worth noting that SQLite specifies single quotes for strings. In cases wher
 ## Resources
 
 * [SELECT and FROM](http://www.padjo.org/tutorials/databases/sql-select-and-from/)
+
+<a href='https://learn.co/lessons/sql-book-insert-and-select' data-visibility='hidden'>View this lesson on Learn.co</a>
