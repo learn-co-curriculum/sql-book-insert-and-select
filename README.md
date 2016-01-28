@@ -261,4 +261,4 @@ It's worth noting that SQLite specifies single quotes for strings. In cases wher
 
 * [SELECT and FROM](http://www.padjo.org/tutorials/databases/sql-select-and-from/)
 
-<a href='https://learn.co/lessons/sql-book-insert-and-select' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-book-insert-and-select' title='INSERT'>INSERT</a> on Learn.co and start learning to code for free.</p>
